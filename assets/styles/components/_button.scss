@@ -1,0 +1,27 @@
+button.btn {
+    padding: 12px 36px;
+    display: inline-block;
+    border: none;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+    &:hover{
+        background-color: #d5d5d5;
+        color: #222222;
+    }
+
+}
+
+button.btn-pink {
+    background: $pink;
+
+    &:hover{
+        background-color: $pink-light;
+    }
+}
+
+button.btn-round {
+    border-radius: 40px;
+} 

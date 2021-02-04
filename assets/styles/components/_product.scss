@@ -1,0 +1,30 @@
+.products{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 145px;
+
+    &__item{
+        display: grid;
+        gap: 10px;
+        text-align: center;
+        justify-items: center;
+        
+        &-image{
+            display: block;
+            margin: 0 auto;
+            object-fit: contain;
+            height: 200px;
+        }
+
+        &-price{
+            font-weight: bold;
+        }
+
+        &-description {
+
+        }
+    }
+}

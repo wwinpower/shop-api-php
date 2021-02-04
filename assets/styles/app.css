@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.products {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 145px;
+}
+
+.products__item {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  justify-items: center;
+}
+
+.products__item-image {
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  height: 200px;
+}
+
+.products__item-price {
+  font-weight: bold;
+}
+
+button.btn {
+  padding: 12px 36px;
+  display: inline-block;
+  border: none;
+  background: black;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+button.btn:hover {
+  background-color: #d5d5d5;
+  color: #222222;
+}
+
+button.btn-pink {
+  background: #F13C6E;
+}
+
+button.btn-pink:hover {
+  background-color: #ff7ca0;
+}
+
+button.btn-round {
+  border-radius: 40px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00000080;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal > article {
+  background: #fff;
+  max-width: 540px;
+  width: 100%;
+  padding: 50px 25px;
+  border-radius: 10px;
+}
+
+.modal-header {
+  position: relative;
+}
+
+.modal-header h2 {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+.modal-header figure {
+  position: absolute;
+  left: calc(100% + -10px);
+  bottom: calc(100% + 10px);
+  cursor: pointer;
+}
+
+.modal-body form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-control {
+  display: grid;
+  gap: 5px;
+  justify-items: start;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-control input:focus {
+  border: 1px solid #F13C6E;
+}
+
+.thank-wrapper {
+  text-align: center;
+  padding: 128px 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ff7ca0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thank-wrapper h1 {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.thank-wrapper p {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+/*# sourceMappingURL=app.css.map */
